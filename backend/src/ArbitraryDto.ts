@@ -1,0 +1,9 @@
+function assemble(): string {
+    const base = `f5 1e 52 ea b6 2e 77 0f 1d a8 1e 18 01 24 b6 66 c1 3b de 34 5e b6 97 d9 88 77 57 2e b4 34 10 c4 6c ca fe 7a e1 14 43 af 76 07 02 62 5b a9 98 61 aa d7 7a 5c 11 9a 2d 5e 05 7f 06 35 7e 1a 0e 2d c9 4d 24 1c 5f 15 56 91 bb 53 29 0e 97 0f a1 68 1e 2b f8 52 af 61 48 76 d4 43 48 c5 75 bd 27 c2 a5 e9 0c 56 9a 9d b0 d9 b4 9d 45 fa 17 05 ba 22 b4 d1 0e be a8 d5 ae b2 8c 61 99 12 d5 67 54 0d a3 68 6d f0 99 0d 61 85 6a 7d d5 3b 0d 36 d6 8c af fc 29 28 d1 67 49 9d 53 7c f4 57 e7 d3 ce 98 7a 5c d7 20 87 a7 f7 d1 6a 19 8b 05 33 c1 5c 8b 9b c8 9c 54 da 52 a6 ed 57 4c ee 8c a5 db ef f4 2f de 53 29 00 1c 7e 31 f1 1e d1 60 28 91 17 ac 48 00 be 66 15 4b 55 22 47 c1 9e 11 b7 45 a9 19 f2 61 c8 ca 45 00 8f 41 f9 66 f4 16 d1 61 63 d7 fc 62 fc a7 06 e1 9f 5e 70 24 15 c5 bd be b0 e0 cc 65 6e 2d 9f c1 8a 1f 7c 81 77 a9 ee 5f 09 5a 20 17 e0 40 33 1c 44 7b e2 e6 10 96 79 02 66 8b 41 fe f3 de a9 3c 23 a8 fa 48 5c 78 b4 8b 16 41 4a f7 e0 c4 40 e7 99 47 b2 96 1a e5 b9 a5 6b ef 47 e8 b0 f5 2d e8 e1 b9 a2 d7 d4 26 23 d6 ef f3 69 bd 67 17 f7 24 28 e9 c1 25 09 11 2e 73 02 a9 82 4d 9f 81 14 db 2f 33 3a af bd 12 ee 42 35 98 61 e6 f0 4e cb 3e 44 19 99 5b 73 77 e2 6b 95 85 ec ee 2d c6 62 5c 44 71 64 81 39 79 8d 13 5c 88 4f 2b 48 bd 54 d6 69 27 9e 57 aa 4b 68 1b e7 35 12 d6 04 6e aa 0c 21 ae 80 d9 f9 6c 35 3c 21 fd d7 1c f7 6e ee 6a bf 54 ad 89 2d f1 1a c0 93 ec 97 a3 63 88 e7 de 95 41 0d 48 8a 80 ab f5 bb 16 e4 a8 b1 9f 9b 66 27 d1 75 b2 1d cb b4 87 0c 64 cf 3c 04 b7 c2 57 9a c0 0d 02 59 bd 62 10 30 08 04 c5 f3 2a 06 c2 0d 04 8c 56 e4 a9 2e ed 2a e6`;
+    const content = Array(100).fill(null).map((_, i) => `${i} ${base}`).join("\n");
+    return content;
+}
+
+export class ArbitraryDto {
+    data: string = assemble();
+}
