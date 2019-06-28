@@ -12,6 +12,22 @@ For the purpose of this test, we use 8000 requests and await on them, and increm
 
 Please see the screenshots directory for examples of failure in Chrome but success in Firefox.
 
+## Running
+
+In a terminal:
+
+```
+cd backend
+yarn start:dev
+```
+
+In another terminal:
+
+```
+cd frontend
+yarn start
+```
+
 ## Tech
 
 * NestJS on backend API
